@@ -1,0 +1,47 @@
+:root {
+    --OFF: ;
+    --ON: initial;
+
+    --primary: var(--light, #FF7316) var(--dark, #FF7316);
+    --secondary: var(--light, #333333) var(--dark, #666666);
+    --catalog-menu: var(--light, #333333) var(--dark, #444444);
+    --body-bg: var(--light, #EEEEEE) var(--dark, #1b1b1b);
+    --violet: var(--light, #6A77C9) var(--dark, #6A77C9);
+
+    --bullet: var(--light, #F5F5F5) var(--dark, #ffffff);
+    --bg: var(--light, #F5F5F5) var(--dark, #666666);
+    --bg-content-form: var(--light, #F5F5F5) var(--dark, #444444);
+    --bg-input: var(--light, #F5F5F5) var(--dark, #ededed);
+
+    --footer-bg: var(--light, #333333) var(--dark, #333333);
+    --border-card: var(--light, #DADADA) var(--dark, #4c4c4c);
+    --title: var(--light, #666666) var(--dark, #F5F5F5);
+    --main-text: var(--light, #000000) var(--dark, #ffffff);
+    --text: var(--light, #111111) var(--dark, #ededed);
+    --text-advantages: var(--light, #111111) var(--dark, #1b1b1b);
+    --black: var(--light, #000000) var(--dark, #ffffff);
+    --wrapper-bg: var(--light, #ffffff) var(--dark, #333333);
+    --header-top: var(--light, #333333) var(--dark, #444444);
+    --first-top: var(--light, #242424) var(--dark, #242424);
+    --label-text: var(--light, #999999) var(--dark, #F5F5F5);
+    --img-border: var(--light, #F5F5F5) var(--dark, #7a7a7a); 
+
+    --gray-text: var(--light, #666666) var(--dark, #666666);
+	
+	--listing-gradient: var(--light, linear-gradient(360deg, #EEEEEE 0%, #FFFFFF 100%)) var(--dark, #333333);
+	
+	--see-more: var(--light, linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 10%) 70%)) var(--dark, linear-gradient(to top, rgba(51, 51, 51, 1) 0%, rgba(255, 255, 255, 0%) 70%));
+	
+    font-size: 14px;
+    font-family: 'Exo2', Arial, sans-serif;
+}
+
+html[data-theme='light'] {
+    --light: var(--ON);
+    --dark: var(--OFF);
+}
+
+html[data-theme='dark'] {
+    --light: var(--OFF);
+    --dark: var(--ON);
+}

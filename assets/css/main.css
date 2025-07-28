@@ -1,0 +1,434 @@
+*,
+:before,
+:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-ExtraLight.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-Light.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-Regular.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-Medium.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-SemiBold.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-Bold.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-ExtraBold.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-Black.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-Black.woff") format("woff");
+}
+
+
+@font-face {
+    font-family: "Exo2";
+    font-style: italic;
+    font-display: swap;
+    src: local("Exo2"),
+         url("../fonts/Exo2/Exo2-Italic.woff2") format("woff2"),
+         url("../fonts/Exo2/Exo2-Italic.woff") format("woff");
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	background: var(--body-bg);
+	font-family: "Exo2";
+	font-size: 14px;
+	color: var(--text);
+	scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1560px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.banner {
+	margin: 30px 0;
+	overflow: hidden;
+}
+
+.banner .container {
+	display: flex;
+	background: url('../images/banner__bg.png') #FFFFFF no-repeat center center;
+	color: #000000;
+	justify-content: space-between;
+	position: relative;
+	max-width: 1300px;
+	border: 1px solid #EDEDED;
+	padding: 43px 55px 43px;
+}
+
+.banner_left {
+	z-index: 2;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner__title {
+	font-weight: 700;
+	margin-bottom: 10px;
+	font-size: 31px;
+    line-height: 34px;
+}
+
+.banner__title span {
+    border: 5px solid #F28934;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0px 20px 7px;
+    color: #F28934;
+}
+
+.banner__subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 25px;
+}
+
+.btn {
+	text-transform: uppercase;
+	padding: 12px 19px;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.btn__primary {
+	background-color: var(--primary);
+	color: #ffffff !important;
+	border: none;
+}
+
+.btn__primary:hover {
+	-webkit-filter: brightness(1.3);
+	filter: brightness(1.3);
+}
+
+.banner__button {
+	margin-top: auto;
+}
+
+.banner .btn {
+	border-radius: 40px;
+    padding: 8px 30px;
+    text-transform: none;
+    font-size: 16px;
+	display: inline-block;
+}
+
+.banner__advantages {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 140%;
+	display: flex;
+	gap: 21px;
+	align-items: center;
+}
+
+.banner_right {
+	display: flex;
+    flex-direction: column;
+}
+
+.banner_right .banner__button {
+	padding-left: 60px;
+}
+
+.banner__advantages strong {
+	font-weight: 700;
+	color: #F28934;
+}
+
+.banner_middle {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 85px);
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.banner img {
+	display: block;
+}
+
+.banner__advantages-icon {
+	width: 39px;
+	height: 39px;
+	position: relative;
+	background: #6A76C8;
+	border-radius: 50%;
+}
+
+.banner__advantages-icon:before {
+	width: 6px;
+	height: 23px;
+	position: absolute;
+	background: #FFFFFF;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: '';
+}
+
+.banner__advantages-icon:after {
+	width: 23px;
+	height: 6px;
+	position: absolute;
+	background: #FFFFFF;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: '';
+}
+
+.variant-2 .container {
+	padding: 43px 65px 0 0px;
+	justify-content: flex-start;
+}
+
+.variant-2 .banner__subtitle {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.variant-2 .banner__title span {
+	background: #6A76C8;
+	border-color: #6A76C8;
+	color: #fff;
+}
+
+.variant-2 .banner__subtitle .arrow {
+	position: relative;
+	padding-right: 35px;
+}
+
+.variant-2 .banner__subtitle .arrow:after {
+	position: absolute;
+	content: url('data:image/svg+xml,<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6.36395" y="2.82843" width="4" height="13" rx="2" transform="rotate(-45 6.36395 2.82843)" fill="%23EF7C00"/><rect x="9.19238" y="18.3848" width="4" height="13" rx="2" transform="rotate(-135 9.19238 18.3848)" fill="%23EF7C00"/></svg>');
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.variant-2 .banner_left {
+    justify-content: center;
+    gap: 30px;
+    padding-left: 70px;
+}
+
+.variant-2 .banner__title {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+@media(max-width: 991px) {
+	.banner .container {
+		flex-direction: column;
+		gap: 20px;
+		border-radius: 4px;
+		padding: 60px 30px;
+		background: #FFF;
+	}
+	
+	.banner_right,
+	.banner_middle {
+		z-index: 0;
+	}
+	
+	.banner_middle {
+		right: 0;
+		left: auto;
+		transform: none;
+	}
+	
+	.banner_right .banner__button {
+		padding-left: 0;
+		margin-top: 15px;
+	}
+	
+	.variant-2.banner .container {
+		flex-direction: row;
+		padding: 60px 30px 0px 0;
+		align-items: flex-end;
+	}
+	
+	.variant-2.banner .container {
+		flex-direction: column;
+		align-items: center;
+        padding: 30px 30px;
+	}
+}
+
+@media(max-width: 767px) {
+	.variant-2 .banner_left {
+		padding-left: 0;
+		gap: 10px;
+	}
+}
+
+@media(max-width: 576px) {
+	.banner {
+		padding: 15px;
+	}
+	
+	.banner .container {
+		padding: 15px;
+	}
+	
+	.banner__title {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	
+	.banner__subtitle {
+		font-size: 10px;
+		margin-bottom: 15px;
+	}
+	
+	.banner__subtitle br {
+		display: none;
+	}
+	
+	.banner__title span {
+		padding: 7px 20px 9px;
+        line-height: 10px;
+        border: 2px solid #F28934;
+	}
+	
+	.banner__advantages {
+		font-size: 14px;
+		gap: 9px;
+	}
+	
+	.banner__advantages-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.banner__advantages-icon:before {
+		width: 3px;
+		height: 12px;
+	}
+
+	.banner__advantages-icon:after {
+		width: 12px;
+		height: 3px;
+	}
+	
+	.banner .btn {
+		padding: 8px 18px;
+		font-size: 12px;
+	}
+	
+	.variant-2.banner .container {
+        flex-direction: column;
+        padding: 16px 20px 0;
+        align-items: center;
+    }
+	
+	.variant-2 .banner__img {
+		order: 2;
+	}
+	
+	.variant-2 .banner__subtitle {
+		flex-direction: column;
+		line-height: 16px;
+		gap: 20px;
+	}
+	
+	.variant-2 .banner__subtitle .arrow:after {
+		display: none;
+	}
+	
+	.variant-2 .banner__title {
+        line-height: 18px;
+    }
+	
+	.variant-2 .banner__title span {
+		font-size: 15px;
+	}
+}
