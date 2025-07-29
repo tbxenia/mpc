@@ -305,6 +305,10 @@ body {
     flex-direction: column;
 }
 
+.banner__img.bg-city {
+	background: url('../images/banner__bg-city.png') no-repeat bottom center;
+}
+
 @media(max-width: 991px) {
 	.banner .container {
 		flex-direction: column;
@@ -430,5 +434,14 @@ body {
 	
 	.variant-2 .banner__title span {
 		font-size: 15px;
+	}
+	
+	.banner .banner__img.bg-city {
+		background-size: contain;
+	}
+	
+	.banner .banner__img.bg-city img {
+		display: block;
+		max-width: 100%;
 	}
 }
